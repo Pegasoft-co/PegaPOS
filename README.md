@@ -1,4 +1,5 @@
 # PegaPOS
+
 _ver 0.0.0_
 
 This is an web app to help people recording and dealing with their sales transaction.
