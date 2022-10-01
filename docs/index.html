@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <title>PegaPOS</title>
     <meta charset="UTF-8">
@@ -7,8 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aplikasi yang membantu mu untuk mencatat penjualan hari ini dan esok.">
     <meta name="robots" content="index, nofollow">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body>
-    <h1>Catat jual-beli dengan lebih mudah!</h1>
+    <div class="hero">
+        <nav class="container-fluid">
+            <ul>
+                <li>
+                    <a href="#">PEGAPOS LOGO</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">link 1</a>
+                </li>
+                <li>
+                    <a href="#">link 2</a>
+                </li>
+            </ul>
+        </nav>
+        <header class="container centering">
+            <hgroup class="pegapos">
+                <h1>PegaPOS</h1>
+                <h2>Catat jual-beli menjadi lebih mudah!</h2>
+            </hgroup>
+            <p>
+                <a href="#downloadnow" role="button" data-target="downloadnow" onclick="toggleModal(event)">Coming Soon</a>
+            </p>
+        </header>
+    </div>
+    <main class="container">    
+        <dialog aria-label="Download Sekarang" id="downloadnow">
+            <article class="centering"">
+                <h2>Coming Soon</h2>
+                <a href="#confirm" role="button" data-target="downloadnow" onclick="toggleModal(event)">Coming Soon</a>
+            </article>
+        </dialog>
+    </main>
+    <footer class="container centering">
+        <small>
+            © 2022 <a href="#">PegaSoft</a>
+        </small>
+    </footer>
+    <script src="modal.js"></script>
 </body>
 </html>
